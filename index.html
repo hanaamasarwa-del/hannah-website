@@ -1,21 +1,80 @@
 <!doctype html>
-<html lang="en" dir="ltr">
+<html lang="he" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Website</title>
+    <meta name="description" content="היכרות עם האינטרנט: הרשת שמחברת בין אנשים, רעיונות ומידע ברחבי העולם." />
+    <title>אינטרנט — עולם של חיבורים</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link href="/styles/reset.css" rel="stylesheet" />
     <link href="/styles/main.css" rel="stylesheet" />
   </head>
-  <body>
-    <header>
-      <h1>Welcome to my Website!</h1>
+  <body class="internet-page">
+    <a class="skip-link" href="#main-content">דילוג לתוכן</a>
+    <header class="site-header container">
+      <a class="brand" href="index.html" aria-label="רשת — דף הבית"><span class="brand-mark" aria-hidden="true">✳</span> רשת<span class="orange">.</span></a>
+      <button class="menu-toggle" type="button" aria-controls="main-navigation" aria-expanded="false" aria-label="פתיחת תפריט">
+        <img class="menu-icon" src="/icons/menu.svg" alt="" width="28" height="28" />
+        <img class="close-icon" src="/icons/close.svg" alt="" width="28" height="28" />
+      </button>
+      <nav id="main-navigation" class="main-navigation" aria-label="ניווט ראשי">
+        <a href="index.html" aria-current="page">דף הבית</a>
+        <a href="elements.html">אלמנטים</a>
+        <a href="https://github.com/product-jam-2027/course/">הקורס <span aria-hidden="true">↖</span></a>
+      </nav>
+      <span class="header-note"><span class="status-dot"></span> תמיד יש מה לגלות</span>
     </header>
-    <main>
-      <p>This is a paragraph.</p>
+    <main id="main-content" class="container">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> רעיונות גדולים. עולם מחובר.</p>
+          <h1 id="hero-title">אינטרנט<span class="orange">.</span><br />עולם שלם,<br /><span class="outline-text">במרחק קליק.</span></h1>
+          <p class="hero-description">אנשים, מידע ורעיונות. הרשת שמחברת את הכול — ומשנה את הדרך שבה אנחנו חיים, לומדים ויוצרים.</p>
+          <a class="button primary-button" href="#about">בואו נכיר את הרשת <span aria-hidden="true">↙</span></a>
+          <p class="hero-footnote">סקרנות היא כל מה שצריך כדי להתחיל.</p>
+        </div>
+        <div class="hero-art" role="img" aria-label="איור של כדור הארץ עם מסלולי חיבור סביבו">
+          <span class="art-label" lang="en" dir="ltr">A WORLD OF CONNECTIONS</span>
+          <svg class="globe" viewBox="0 0 500 500" fill="none" aria-hidden="true">
+            <defs><clipPath id="globe-clip"><circle cx="250" cy="250" r="170" /></clipPath></defs>
+            <circle cx="250" cy="250" r="220" stroke="currentColor" stroke-dasharray="2 9" opacity=".25" />
+            <g transform="rotate(-22 250 250)" stroke="currentColor" stroke-width="1.5">
+              <circle cx="250" cy="250" r="170" fill="#e9eddd" />
+              <ellipse cx="250" cy="250" rx="120" ry="170" /><ellipse cx="250" cy="250" rx="55" ry="170" />
+              <path d="M250 80V420M80 250H420" />
+              <g clip-path="url(#globe-clip)"><ellipse cx="250" cy="170" rx="170" ry="35" /><ellipse cx="250" cy="250" rx="170" ry="55" /><ellipse cx="250" cy="330" rx="170" ry="35" /></g>
+              <ellipse cx="250" cy="250" rx="232" ry="76" stroke="#e4572e" stroke-width="2.5" transform="rotate(-16 250 250)" />
+            </g>
+            <circle cx="403" cy="120" r="10" fill="#e4572e" /><circle cx="84" cy="340" r="7" fill="currentColor" />
+            <path d="M432 335V365M417 350H447" stroke="#e4572e" stroke-width="2" />
+          </svg>
+          <span class="floating-label label-top"><span class="status-dot"></span> הכול מתחיל בחיבור</span>
+          <span class="floating-label label-bottom" dir="ltr"><span class="code-symbol">&lt;/&gt;</span> Hello, world!</span>
+          <span class="art-coordinate" lang="en" dir="ltr">NO BORDERS. ENDLESS POSSIBILITIES.</span>
+        </div>
+      </section>
+      <div class="topic-strip" aria-label="נושאי העמוד"><span>רשת אחת</span><span aria-hidden="true">✳</span><span>אינסוף אפשרויות</span><span aria-hidden="true">✳</span><span>כולנו מחוברים</span><span aria-hidden="true">✳</span><span>ידע ללא גבולות</span></div>
+      <section id="about" class="about-section" aria-labelledby="about-title">
+        <div class="section-heading"><p class="eyebrow">01 / קצת על הרשת</p><h2 id="about-title">אז מה זה בעצם<br />אינטרנט?</h2></div>
+        <div class="about-copy"><p class="lead">רשת של רשתות. חיבור אחד גדול.</p><p>האינטרנט הוא מערכת עולמית המחברת רשתות מחשבים זו לזו. באמצעות כללי תקשורת משותפים, מחשבים ומכשירים יכולים להעביר מידע ביניהם, גם כשהם נמצאים בצדדים שונים של העולם.</p><p>הרשת מאפשרת לנו לשלוח דואר אלקטרוני, לשוחח, לשתף קבצים ולגלוש באתרים. ה־Web הוא אחד השירותים הפועלים באינטרנט — אוסף של דפים ואתרים המחוברים באמצעות קישורים.</p><a class="text-link" href="https://he.wikipedia.org/wiki/אינטרנט">לקריאה נוספת בוויקיפדיה <span aria-hidden="true">↖</span></a></div>
+      </section>
+      <section class="possibilities" aria-labelledby="possibilities-title">
+        <div class="section-top"><h2 id="possibilities-title">חיבור קטן. אפשרויות גדולות.</h2><span class="eyebrow">02 / מה אפשר לעשות כאן?</span></div>
+        <div class="cards">
+          <article class="info-card"><div class="card-top"><span class="card-icon" aria-hidden="true">↗</span><span class="card-number">01</span></div><h3>לגלות וללמוד</h3><p>לחפש מידע, לקרוא מאמרים ולהרחיב את הידע. הסקרנות שלכם היא נקודת ההתחלה.</p><span class="card-tag">ידע במרחק חיפוש</span></article>
+          <article class="info-card"><div class="card-top"><span class="card-icon" aria-hidden="true">◎</span><span class="card-number">02</span></div><h3>להישאר קרובים</h3><p>לשלוח הודעה, לדבר בשיחת וידאו ולשמור על קשר עם אנשים, גם מעבר לים.</p><span class="card-tag">פחות מרחק, יותר קשר</span></article>
+          <article class="info-card"><div class="card-top"><span class="card-icon" aria-hidden="true">✳</span><span class="card-number">03</span></div><h3>ליצור ולשתף</h3><p>לפרסם רעיונות, לשתף יצירות ולעבוד יחד. לכל אחד ואחת יש מקום ברשת.</p><span class="card-tag">הרעיון הבא מתחיל בכם</span></article>
+        </div>
+      </section>
+      <section class="greeting-section" aria-labelledby="greeting-title">
+        <div><p class="eyebrow">03 / נעים להכיר</p><h2 id="greeting-title">כל חיבור מתחיל בשלום<span class="orange">.</span></h2><p>מאחורי כל מסך יש מישהו. איך קוראים לכם?</p></div>
+        <form id="greeting-form"><label for="visitor-name">השם שלכם</label><div class="input-row"><input id="visitor-name" name="name" type="text" autocomplete="given-name" placeholder="למשל, יונתן" maxlength="80" required /><button class="button" type="submit">תגידו שלום <span aria-hidden="true">↖</span></button></div></form>
+      </section>
     </main>
-
+    <footer class="site-footer container"><a class="brand" href="index.html">רשת<span class="orange">.</span></a><p>נבנה מתוך סקרנות. מחבר בין רעיונות.</p><a href="https://he.wikipedia.org/wiki/אינטרנט">תוכן מעובד מתוך ויקיפדיה ↖</a></footer>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
