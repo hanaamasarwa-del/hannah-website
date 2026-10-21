@@ -1,21 +1,64 @@
 <!doctype html>
-<html lang="en" dir="ltr">
+<html lang="he" dir="rtl">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Website</title>
+    <meta name="description" content="האתר האישי של הנא — קצת עליי, על הלימודים שלי ועל התחביבים שלי." />
+    <title>הנא — דף הבית</title>
+    <link rel="icon" href="/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet" />
     <link href="/styles/reset.css" rel="stylesheet" />
     <link href="/styles/main.css" rel="stylesheet" />
   </head>
-  <body>
-    <header>
-      <h1>Welcome to my Website!</h1>
+  <body id="top">
+    <a class="skip-link" href="#main-content">
+      דילוג לתוכן
+    </a>
+    <header class="site-header container">
+      <a class="brand" href="index.html" aria-label="הנא — דף הבית">הנא</a>
+      <button class="menu-toggle" type="button" aria-controls="main-navigation" aria-expanded="false" aria-label="פתיחת תפריט">
+        <img class="menu-icon" src="/icons/menu.svg" alt="" width="28" height="28" />
+        <img class="close-icon" src="/icons/close.svg" alt="" width="28" height="28" />
+      </button>
+      <nav id="main-navigation" class="main-navigation" aria-label="ניווט ראשי">
+        <a href="index.html" aria-current="page">דף הבית</a>
+        <a href="hobbies.html">תחביבים</a>
+        <a href="elements.html">אלמנטים</a>
+      </nav>
     </header>
-    <main>
-      <p>This is a paragraph.</p>
-    </main>
+    <main id="main-content" class="container">
+      <section class="hero" aria-labelledby="home-title">
+        <p class="eyebrow">נעים להכיר</p>
+        <h1 id="home-title">היי, אני הנא.</h1>
+      </section>
 
+      <section class="greeting-section" aria-labelledby="greeting-title">
+        <div>
+          <h2 id="greeting-title">אפשר גם להגיד שלום.</h2>
+          <p>איך קוראים לכם?</p>
+        </div>
+        <form id="greeting-form" action="https://formsubmit.co/hanaa.masarwa@mail.huji.ac.il" method="POST">
+          <label for="visitor-name">השם שלכם</label>
+          <div class="input-row">
+            <input id="visitor-name" name="name" type="text" autocomplete="given-name" placeholder="הקלידו שם" maxlength="80" aria-describedby="greeting-notice" required />
+            <button class="button primary-button" type="submit">שלום</button>
+          </div>
+          <p id="greeting-notice" class="form-note">בלחיצה על שלום, השם שלכם יישלח להנא באמצעות שירות FormSubmit.</p>
+          <p id="greeting-status" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer container">
+      <a class="brand" href="index.html">הנא</a>
+      <p>
+        הנא · האתר האישי שלי
+      </p>
+      <a class="back-top" href="#top">
+        בחזרה למעלה ↑
+      </a>
+    </footer>
     <script type="module" src="/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="האתר האישי של הנא — קצת עליי, על הלימודים שלי ועל התחביבים שלי." />
+    <title>הנא — תחביבים</title>
+    <link rel="icon" href="/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="/styles/reset.css" rel="stylesheet" />
+    <link href="/styles/main.css" rel="stylesheet" />
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#main-content">
+      דילוג לתוכן
+    </a>
+    <header class="site-header container">
+      <a class="brand" href="index.html" aria-label="הנא — דף הבית">הנא</a>
+      <button class="menu-toggle" type="button" aria-controls="main-navigation" aria-expanded="false" aria-label="פתיחת תפריט">
+        <img class="menu-icon" src="/icons/menu.svg" alt="" width="28" height="28" />
+        <img class="close-icon" src="/icons/close.svg" alt="" width="28" height="28" />
+      </button>
+      <nav id="main-navigation" class="main-navigation" aria-label="ניווט ראשי">
+        <a href="index.html">דף הבית</a>
+        <a href="hobbies.html" aria-current="page">תחביבים</a>
+        <a href="elements.html">אלמנטים</a>
+      </nav>
+    </header>
+    <main id="main-content" class="container">
+      <section class="space-intro" aria-labelledby="space-title">
+        <h1 id="space-title">חלל ואסטרונומיה.</h1>
+        <p>אני מתעניינת בחלל, בכוכבי לכת ובחקר היקום.</p>
+      </section>
+
+      <figure class="space-art">
+        <img src="/images/spacyyyy.jpg" alt="שמיים זרועי כוכבים וענני אור ורודים וכחולים בשביל החלב" width="6000" height="4000" />
+        <figcaption>יש עוד הרבה לגלות.</figcaption>
+      </figure>
+
+      <section class="space-topics" aria-labelledby="topics-title">
+        <h2 id="topics-title">הידעת?</h2>
+        <div class="space-topics-grid">
+          <article>
+            <h3>גם לחלל יש ריח</h3>
+            <p>אסטרונאוטים שחזרו מהליכות חלל תיארו ריח שנשאר על החליפות והציוד, והזכיר להם סטייק חרוך, מתכת חמה ואדי ריתוך. כנראה שגם ליקום יש עניין במנגל.</p>
+          </article>
+          <article>
+            <h3>כפית ששוקלת מיליארדי טונות</h3>
+            <p>כוכבי נייטרונים צפופים כל כך, שמסת חומר בנפח של כפית עשויה להגיע למיליארדי טונות. לא בדיוק תוספת מומלצת לקפה של הבוקר.</p>
+          </article>
+          <article>
+            <h3>אולי יורד גשם של יהלומים</h3>
+            <p>מדענים מעריכים שבתנאי הלחץ והטמפרטורה הקיצוניים בעומק אורנוס ונפטון, עשויים להיווצר יהלומים ששוקעים פנימה כמו גשם. לצערנו, אף אחד מהם לא ממש מתאים לחופשה.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer container">
+      <a class="brand" href="index.html">הנא</a>
+      <p>
+        הנא · האתר האישי שלי
+      </p>
+      <a class="back-top" href="#top">
+        בחזרה למעלה ↑
+      </a>
+    </footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
